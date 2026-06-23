@@ -1,0 +1,373 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #111;
+  background: #ececec;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 36px 16px;
+  letter-spacing: 0;
+}
+
+a {
+  color: inherit;
+}
+
+.back-to-projects {
+  position: fixed;
+  top: 14px;
+  left: 14px;
+  z-index: 10;
+  min-height: 32px;
+  border: 1px solid #8a8a8a;
+  padding: 6px 10px;
+  color: #111;
+  background: #ededed;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+}
+
+.back-to-projects:hover,
+.back-to-projects:focus {
+  background: #fff;
+}
+
+.wide-page {
+  padding-top: 20px;
+}
+
+.dark-page {
+  background: #1e1e2f;
+}
+
+.tk-window {
+  width: 100%;
+  min-height: 200px;
+  padding: 20px;
+  background: #f4f4f4;
+  border: 1px solid #a9a9a9;
+  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.18);
+}
+
+.tk-window h1 {
+  margin: 0 0 18px;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 700;
+}
+
+.tk-window h2 {
+  margin: 0 0 16px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.menu-buttons {
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.menu-buttons form {
+  margin: 0;
+}
+
+.menu-buttons.small {
+  gap: 5px;
+}
+
+.tk-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 25ch;
+  min-height: 28px;
+  padding: 4px 10px;
+  color: #111;
+  text-decoration: none;
+  font: inherit;
+  background: #ededed;
+  border: 2px solid #767676;
+  border-color: #fefefe #767676 #767676 #fefefe;
+  cursor: pointer;
+}
+
+.tk-button:active {
+  border-color: #767676 #fefefe #fefefe #767676;
+}
+
+.tk-button.danger {
+  color: #111;
+}
+
+.message {
+  margin: 0 0 14px;
+  padding: 8px 10px;
+  background: #fffef4;
+  border: 1px solid #c8bc77;
+}
+
+.stack-form {
+  display: grid;
+  gap: 9px;
+  margin: 0 0 16px;
+}
+
+.stack-form.compact {
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+label {
+  display: grid;
+  gap: 4px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  min-height: 28px;
+  padding: 3px 6px;
+  font: inherit;
+  background: #fff;
+  border: 1px solid #8b8b8b;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.tabs {
+  display: grid;
+  grid-template-columns: max-content max-content 1fr;
+  align-items: end;
+  margin-bottom: 16px;
+}
+
+.tabs input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tabs > label {
+  display: block;
+  padding: 6px 12px;
+  border: 1px solid #9d9d9d;
+  border-bottom: 0;
+  background: #dedede;
+}
+
+#active-tab:checked + label,
+#completed-tab:checked + label {
+  background: #f4f4f4;
+}
+
+.tab {
+  display: none;
+  grid-column: 1 / -1;
+  min-height: 360px;
+  padding: 8px;
+  border: 1px solid #9d9d9d;
+  background: #f4f4f4;
+}
+
+#active-tab:checked ~ .active-panel,
+#completed-tab:checked ~ .completed-panel {
+  display: block;
+}
+
+.section-label {
+  margin: 0 0 8px;
+  font-size: 12px;
+  text-align: left;
+}
+
+.listbox {
+  min-height: 300px;
+  background: #fff;
+  border: 1px solid #8a8a8a;
+  overflow: auto;
+}
+
+.listbox.short {
+  min-height: 120px;
+  margin-bottom: 16px;
+}
+
+.list-item,
+.empty-row {
+  display: block;
+  padding: 5px 8px;
+  text-decoration: none;
+}
+
+.list-item:hover,
+.list-item:focus {
+  color: #fff;
+  background: #0a64d6;
+}
+
+.dashboard-window {
+  min-height: 750px;
+  padding: 30px;
+  color: #fff;
+  background: #1e1e2f;
+  border: 0;
+}
+
+.dashboard-window h1 {
+  margin: 0 0 15px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.dashboard-summary {
+  margin: 0 0 15px;
+  color: #d3d3d3;
+  text-align: center;
+}
+
+.dial {
+  width: 250px;
+  height: 250px;
+  margin: 10px auto 25px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at center, #1e1e2f 0 58%, transparent 59%),
+    conic-gradient(#00e676 calc(var(--percent) * 1%), #444 0);
+}
+
+.dial span {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.progress-grid {
+  display: grid;
+  gap: 6px;
+  max-width: 560px;
+  margin: 0 auto 20px;
+}
+
+.progress-row {
+  display: grid;
+  grid-template-columns: 140px 1fr 120px;
+  gap: 10px;
+  align-items: center;
+  color: #fff;
+}
+
+.progress-track {
+  height: 14px;
+  overflow: hidden;
+  background: #efefef;
+  border: 1px solid #8d8d8d;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #2b79d0;
+}
+
+.muted {
+  color: #d3d3d3;
+}
+
+.streak {
+  margin: 20px 0;
+  color: #ff9800;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 6px 14px;
+  max-width: 520px;
+  margin: 0 auto 20px;
+}
+
+.info-grid dt {
+  font-weight: 700;
+}
+
+.info-grid dd {
+  margin: 0;
+  color: #d3d3d3;
+}
+
+.timer {
+  margin: 20px 0;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  text-align: center;
+}
+
+.tk-dialog {
+  width: min(400px, calc(100vw - 32px));
+  padding: 14px;
+  border: 1px solid #777;
+  background: #f4f4f4;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 10px;
+}
+
+.dialog-actions .tk-button {
+  width: 12ch;
+}
+
+.recall-form {
+  margin-bottom: 10px;
+}
+
+.note-display {
+  min-height: 330px;
+  margin: 10px 0 16px;
+  padding: 10px;
+  overflow: auto;
+  white-space: pre-wrap;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12px;
+  line-height: 1.45;
+  background: #fff;
+  border: 1px solid #8a8a8a;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 12px;
+  }
+
+  .tk-window {
+    padding: 16px;
+  }
+
+  .progress-row {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-window {
+    padding: 20px;
+  }
+}
