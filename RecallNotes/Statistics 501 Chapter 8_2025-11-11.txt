@@ -1,0 +1,10 @@
+Got 75% way through problem 1: 
+
+Learned about how the estimator is the thing that estimates the parameter that you are looking for. In this case it was the population mean and the estimator was the sample mean. The point estimation is the actual value attached to the estimator. 
+
+I found the sampling distribtion of the estimator by first checking CLT conditions (n > 30 means normal distribution). With this info I found standard deviation. 
+
+Found 95% confidence interval by adding/subtracting the sample mean from 1.96 * the standard deviation. 
+
+Most important concept learned from this is probably these points: 1. sample mean does fall betwen condfidence intervals 2. population mean has the percentag of the confidence interval chance of falling in that interval. So in this case the population mean has a 95% chance of falling within that interval.
+

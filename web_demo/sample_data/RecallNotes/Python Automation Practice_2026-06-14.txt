@@ -1,0 +1,4 @@
+Reviewed CSV parsing with DictReader and DictWriter.
+
+Useful reminder: keeping consistent headers makes it much easier to update rows and rewrite the file safely.
+

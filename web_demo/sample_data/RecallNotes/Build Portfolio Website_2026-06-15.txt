@@ -1,0 +1,4 @@
+Today I focused on the main portfolio layout and how each project should be framed.
+
+The important takeaway was that the project page should explain the problem, show the tool, and make the original version visible instead of pretending it was always a polished web product.
+

@@ -1,0 +1,2 @@
+With padnas when oyu create helper functions you can take the outpout of those function and .apply them to a column when creating a new column. Pretty cool and intuitive way to manipulate columns/create new columns based off of old ones!
+

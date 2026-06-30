@@ -1,0 +1,23 @@
+.DS_Store
+
+# Python bytecode and local caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.Rhistory
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build outputs
+build/
+dist/
+*.app/
+
+# Local packaging/editor artifacts
+*.egg-info/
+.idea/
+.vscode/

@@ -1,0 +1,4 @@
+CLT states that increaseing the sample size will increase teh odds the distribution is normal. 
+
+So confidence intervals give us an idea of wehre a certain parameter lies. Ie 95 perent confidence interval tells us theres a 95% chance that the mean will lie between x point and y point.
+

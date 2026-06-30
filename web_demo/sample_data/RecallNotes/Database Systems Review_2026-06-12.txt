@@ -1,0 +1,4 @@
+Reviewed joins, grouping, and indexes.
+
+The clearest mental model: indexes speed up lookup patterns, but they also add write overhead and should match actual query needs.
+

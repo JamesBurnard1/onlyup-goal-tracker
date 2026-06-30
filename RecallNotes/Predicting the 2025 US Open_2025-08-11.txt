@@ -1,0 +1,15 @@
+Learned about Boosting: 
+
+A phenominal algorithm that really helps with overfitting. In random forests and in bootstraps you actually end up making one big tree which in some ways picks up on all the noise in the trianing data. 
+
+Boosting fixes this by building trees sequentially following this process:
+
+A tree is built:
+1. look at residuals, the difference between actual and predicted values
+2. Fit a new small tree that aims to predict those errors
+3. add new tree to existing model to improve. 
+
+Shrinkage in boosting was also introduced. 
+
+shrinkage is instead of adding the full correction from each new tree, we scale it down w a number called the shrinkage paramter. Makes the model improve more slowly, cautiously, often resulting in better accuracy.
+

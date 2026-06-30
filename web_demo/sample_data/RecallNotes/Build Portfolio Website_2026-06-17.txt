@@ -1,0 +1,4 @@
+I worked through how to present the goal tracker as a demo while keeping the original desktop app context.
+
+The web version should use sample data, reset easily, and preserve the simple workflow of the original GUI.
+

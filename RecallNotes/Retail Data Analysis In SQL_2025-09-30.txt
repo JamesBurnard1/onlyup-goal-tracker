@@ -1,0 +1,2 @@
+Join querys are for when you have to access more than one table to obtain the data. You basically select multiple tables and pull different columns from the different tables. You can pull from more than two tables as well. Self joins are when you make a table by pulling two columns from the same table. Count and AVG are two examples of methods that allow you to look into descriptive statistics. Grouping is when you want to group up cusomers by a variabels and use a descriptive statistic on it.
+

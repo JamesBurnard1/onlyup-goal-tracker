@@ -1,0 +1,16 @@
+Learning about Regression Trees:
+
+Two steps in how they are made:
+
+1. Split "predictor space" (all possible values" x1, x2, x3... xp into J distinct regions, R1...R2...R3. 
+
+2. For any value that ends up in Rj (any of the regions created) those values end up having the same outcome, which is just the mean of all the values that fall into that region.
+
+Elaborting on step 1 previously: 
+
+You take RSS of every final chunk then sum up all of the RSS's for those chunks to get the best possible construction of regions R1... Rj. Remember this looks like the double sigme equation. 
+
+The problem with this is that because when working with real data, there could be so many values. THink about it, if you wanted to create 2 non overlapping regions with 10 data point you have 2^10 which is 1024 possible ways to split up the data! Think abhout that in a data set with liek 1000 values. Not possible. 
+
+The solution is called the top down - greedy approach. Start at the top of the tree and split at each step. YOu start by splitting X with cut point s, so you have two initial subregions. Then find the RSS for all values of x and s in both of those sub regions and add them together. Here you will find the best subregions to make at that split!
+

@@ -1,0 +1,18 @@
+Learned about Tree Pruning, which is the act about helping make a tree that could be overfitting its data a little more accurate. 
+
+Essentially you grow your tree, find the best (lowest test error) sub tree. The problem here is that there are so many poentially good sub trees to choose from so how exactly do you go about picking the best one. 
+
+Use the cost complexity pruning technique where you basically sum through every leaf in the tree, for each leaf finding the error value and considering how many leaves the tree has. 
+
+Also started learning about Classification Trees:
+
+Function in very similar ways to regression trees but ues on qualitative data, instead. SO there are different things to use instead of RSS (as it relies on numeric values) which i will be getting into during my next study session.
+
+Learned a little bit about classification trees but for the most part skipped that section as I wont be using it for my project. 
+
+Learned about bagging, a technique that helps minimize the high variance that regression trees tend to have. This means that if you split the training data in half and made two different regression trees with those two halfs, you would get wildy different results a lot of the time. 
+
+So bagging basically takes many different random sets from the population and builds many prediction models. You then average the results of the predictions.  What this looks like as a formula is essentially summing over the prediction from all teh models and dividing teh sum by the # of models to get the averatge. 
+
+Next ill be getting into random forests which is something I think that I will actually be using!
+
